@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    height: 4rem;
+    background-color:#76d2b6;
+    overflow: hidden;
+    
+}
+header .container{
+    display: flex;
+
+}
+h1{
+    line-height: 4rem;
+}
+header img{
+    max-height: 4rem;
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-right: 2rem;
+}
+.card-section{
+    margin: 0 -0.7rem;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.card-wrapper{
+    width: calc(100% / 5);
+    padding: 0.7rem;
+}
+.card-img img{
+    max-width: 100%;
+}

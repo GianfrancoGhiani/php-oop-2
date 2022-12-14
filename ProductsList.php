@@ -20,7 +20,7 @@ $products = [
     ],
     [
         'id'=> 3,
-        'name' => 'Topolino a batteria',
+        'name' => '', // Topolino a batteria
         'imgPath' => 'https://images.obi-italia.it/product/IT/412x329/167560_1.jpg',
         'price'=> 4.50,
         'brand'=> 'pippo',

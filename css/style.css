@@ -1,8 +1,19 @@
+:root{
+    --main: #76d2b6;
+    --main-over: rgba(118, 210, 182, 0.65);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+main{
+    background-color: #F9F6EE;
+    height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
     max-width: 1140px;
@@ -10,7 +21,7 @@
 }
 header{
     height: 4rem;
-    background-color:#76d2b6;
+    background-color: var(--main);
     overflow: hidden;
     
 }
@@ -28,15 +39,91 @@ header img{
     margin-right: 2rem;
 }
 .card-section{
-    margin: 0 -0.7rem;
+    margin: 0 -0.3rem;
     display: flex;
     
     flex-wrap: wrap;
 }
 .card-wrapper{
     width: calc(100% / 5);
-    padding: 0.7rem;
+    padding: 0.3rem;
+}
+.card{
+    cursor: pointer;
+    padding: .7rem;
+    border: 1px solid  var(--main);
+    border-radius: .6rem;
+    transition: border 300ms ease-in-out, background-color 300ms ease-in-out;
+    position: relative;
+
+}
+.card:hover{
+    border: 1px solid var(--main-over);
+    background-color: var(--main-over);
+}
+.card-txt div{
+    padding-top: 0.5rem;
+}
+.price{
+    font-weight: bold;
+    color: grey;
+}
+.brand{
+    text-transform: uppercase;
+    color: grey;
+    font-style: italic;
+    font-size: 70%;
+}
+.card-img{
+    height: 210px;
 }
 .card-img img{
     max-width: 100%;
+    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 4rem;
+    height: 4rem;
+    background-color: var(--main);
+    background-image: url('../img/paws.png');
+    background-size: cover;
+    background-position: bottom;
+}
+footer .container{
+    text-align: end;
+    color: white;
+    font-weight: bold;
+}
+.card-icons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.side-char{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    width: 300px;
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+
+}
+.char-row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid lightgrey;
+}
+.total-price{
+    margin-top: 2rem;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+.btn-shop{
+    margin-top: 1rem;
 }
